@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+      
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="img\logo.png" alt="Company Logo">
+    </div>
+    <div class="company-info">
+      <h5>Dnyanda Sustainable<br>Engineering Solutions<br>Private Limited, Pune</h5>
+    </div>
+  
+    <nav>
+      <!-- <div class="menu-logo">
+        <img src="img\menubar.png" alt="Menu Logo">
+      </div> -->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="trainings.html">Trainings</a></li>
+        <li class="dropdown" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+          <a href="">Opportunities</a>
+          <ul class="dropdown-menu" style="font-color: white;">
+            <li style="background-color: black;"><a href="internships.html">Internships</a></li>
+            <li style="background-color: black;"><a href="jobs.html">Jobs</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="search-login">
+      <input type="text" placeholder="Search">
+      <a href="login.html">
+        <img src="img\personlogo.png" alt="Person Image" class="person-image">
+      </a>   </div>
+      <!-- <input type="text" placeholder="Search"> -->
+    </div>
+  </div>
+ <div>
+        <!-- <img src="img\cart.png" alt="Cart">
+        <img src="img\profilelogo.jpg" alt="Profile"> -->
+</div>
+    
+  </header>
+  <style>
+    .pride {
+        text-align: center;
+    }
+
+    .carts-wrapper-pride {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .cart-pride {
+        position: relative;
+        width: 200px;
+        height: 300px;
+        background-color: #fce6f9;
+        border-radius: 5px;
+        margin: 10px;
+        overflow: hidden;
+    }
+
+    .cart-image-pride {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: #ccc;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .cart-image-pride img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+
+   
+
+   
+
+    .cart-header-pride {
+        font-size: 14px;
+        font-family: sans-serif;
+        color: black;
+    }
+
+    .cart-description-pride {
+        font-size: 12px;
+        font-family: sans-serif;
+        color: black;
+    }
+
+    .button-pride {
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: blue;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 20px;
+        font-size: 10px;
+        font-family: sans-serif;
+        margin-top: 5px;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .social-media a {
+        display: inline-block;
+        margin: 0 5px;
+        width: 20px;
+        height: 20px;
+        background-color: #333;
+        border-radius: 50%;
+        color: #fff;
+        text-align: center;
+        line-height: 20px;
+        text-decoration: none;
+    }
+
+    .btn-pride-explore {
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: blue;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 20px;
+        font-size: 10px;
+        font-family: sans-serif;
+        margin-top: 10px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cart-image-pride img {
+     transition: filter 0.3s ease;
+ }
+
+ 
+</style>
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .company-description {
+      display: flex;
+      align-items: center;
+      padding: 50px;
+      background-color: #fce6f9;
+      color: #000000;
+    }
+    
+    .company-description-text {
+      flex: 1;
+    }
+    
+    .company-description-text h1 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    
+    .company-description-text p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    
+    .company-description-image {
+      flex: 1;
+      text-align: center;
+    }
+    
+    .company-description-image img {
+      max-width: 100%;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="company-description">
+    <div class="company-description-text">
+      <h1>Welcome to Our Company</h1>
+      <p>We are a team of engineers who consciously joined hands to meet human needs, protect the environment, and ensure a sustainable future. Our mission is to create a sustainable society and solve people's problems by providing unique products and services based on a human- and nature-centered approach. Dnyanda Sustainable Engineering Solutions Private Limited Pune believes in having solutions that benefit both people and the environment. We make sure of the technical superiority of the products we offer. We strive to understand and improve our products to make them more economical and environmentally friendly.</p>
+    </div>
+    <div class="company-description-image">
+      <img src="img\officelogo.png" alt="Company Image">
+    </div>
+  </div>
+  
+  <!-- Rest of your code -->
+  
+</body>
+</html>
+
+<div class="pride">
+    <center><h2>Our Team Members</h2></center>
+   <hr>
+    <div class="carts-wrapper-pride" id="carts-wrapper-pride">
+      <div class="cart-pride">
+                 <div class="pride">
+                     <div class="cart-image-pride" data-text="We are committed to enrich the world with Sustainable Innovations">
+                         <img src="img\vikasShinde.png" alt="Image 1" style="margin-bottom: 0px; height:190px;">
+                         <div class="explore-button" onclick="openMessage('Dr. Vikas Shinde', 'Director and founder','Dr. Vikas Vithal Shinde is working as Professor in the Mechanical engineering Department and Director, Centre of excellence in Project-Based Learning (PBL) at Vishwaniketan iMEET, Khalapur, Mumbai University.He is the first Indian Ph.D. in PBL from Aalborg University, Denmark awarded by the UNESCO chair in PBL. ')">Explore</div>
+
+                        </div>
+                     <center>
+                         <h5 >Dr. Vikas Shinde</h5>
+                     </center>
+                     
+                     <center>
+                         <p class="cart-description-pride" style="margin-bottom: 0px;">Director and Founder</p>
+                     </center>
+                     <center>
+                         <!-- <a class="button-pride" href="#">Know More</a> -->
+                     </center>
+                     
+                 </div>
+             </div>
+  
+             
+             <div class="cart-pride">
+                 <div class="pride">
+                     <div class="cart-image-pride" data-text="We are committed to enrich the world with Sustainable Innovations">
+                         <img src="img\dnyaneswarsir.png" alt="Image 2" style="margin-bottom: 0px; height:190px;">
+                         <div class="explore-button" onclick="openMessage('Dr. Dnyaneshwar Mantri', 'Consultant','Dr. Dnyaneshwar S. Mantri is graduated in Electronics Engineering from Walchand Institute of Technology, Solapur (MS) India in 1992 and received Masters from Shivaji University in 2006. He has been awarded PhD. in Wireless Communication at the Center for TeleInFrastruktur (CTIF), Aalborg University, Denmark.')">Explore</div>
+
+                        </div>
+                     <center>
+                         <h5 >Dr. Dnyaneshwar Mantri</h5>
+                     </center>
+                     
+                     <center>
+                         <p class="cart-description-pride" style="margin-bottom: 0px;">Consultant</p>
+                     </center>
+                     <center>
+                         <!-- <a class="button-pride" href="#">Know More</a> -->
+                     </center>
+                     
+                 </div>
+             </div>
+             <div class="cart-pride">
+              <div class="pride">
+                  <div class="cart-image-pride" data-text="We are committed to enrich the world with Sustainable Innovations">
+                      <img src="img\Shilpa Shinde.png" alt="Image 3" style="margin-bottom: 0px; height:190px;">
+                      <div class="explore-button" onclick="openMessage('Shilpa Shinde', 'CEO','Mrs. Shilpa V Shinde completed her B.E. (Electronics) in 2005 and her M.E. (Electronics) in 2011 from Shivaji University, Kolhapur. She is currently a Ph.D. student at Savitribai Phule Pune University. She is working on an embedded project and acting as a technology trainer. Her research areas are Wireless Body Area Network, Wireless Sensor Network, and Image Processing. She had published 21 national and international papers in various journals. She has a total of 15 years of teaching experience and is currently working as an Assistant Professor in the Electronics and Telecommunication Department at Vishwaniketan’s Institute of Management Entrepreneurship and Engineering Technology, Khalapur.')">Explore</div>
+
+                    </div>
+                  <center>
+                      <h5 >
+                        Shilpa Shinde</h5>
+                  </center>
+                  
+                  <center>
+                      <p class="cart-description-pride" style="margin-bottom: 0px;">CEO</p>
+                  </center>
+                  <center>
+                      <!-- <a class="button-pride" href="#">Know More</a> -->
+                  </center>
+                  
+              </div>
+          </div> <div class="cart-pride">
+            <div class="pride">
+                <div class="cart-image-pride" data-text="We are committed to enrich the world with Sustainable Innovations">
+                    
+                  <img src="img\profile.png" alt="Image 4" style="margin-bottom: 0px; height:190px;">
+                  <div class="explore-button" onclick="openMessage('Reeta Mantri', '.')">Explore</div>
+
+                </div>
+                <center>
+                    <h5 >Reeta Mantri</h5>
+                </center>
+                
+                <center>
+                    <p class="cart-description-pride" style="margin-bottom: 0px;">.</p>
+                </center>
+                <center>
+                    <!-- <a class="button-pride" href="#"> More</a> -->
+                </center>
+                
+            </div>
+        </div>
+        <div class="cart-pride">
+          <div class="pride">
+              <div class="cart-image-pride" data-text="We are committed to enrich the world with Sustainable Innovations">
+                  <img src="img/rushikeshmali.png" alt="Image 5" id="img" style="margin-bottom: 0px; height:190px;">
+                  <div class="explore-button" onclick="openMessage('Rushikesh Mali', 'Product Manager','Rushikesh joined DSES in September 2020 and was appointed Product Manager in December 2021. He holds a Bachelor of Engineering degree in Mechanical Engineering from the University of Mumbai. He successfully completed an international internship program at Ural Federal University, Russia, in addition to his other academic accomplishments. Since assuming the role of Product Manager, Rushikesh has been responsible for curating ideas, analyzing the market, conducting user research, defining product visions, creating product roadmaps, determining product positioning, creating product requirements for engineering and support teams, developing prototypes, managing testing, collect user feedback, coordinate with the respective team, etc. to turn ideas into products. Rushikesh loves photography, painting, and travel and is a strong believer in changing people lives through innovative products. Born in 1999, Rushikesh lives in Panvel, with his family.')">Explore</div>
+                  <!-- <button onclick="openMessage('John Doe', 'Manager', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.')">Open Message</button> -->
+
+                </div>
+              <center>
+                  <h5 >
+                    Rushikesh Mali</h5>
+              </center>
+              
+              <center>
+                  <p class="cart-description-pride" style="margin-bottom: 0px;">Product Manager
+
+                  </p>
+              </center>
+              <center>
+                  <!-- <a class="button-pride" href="#">Explore</a> -->
+              </center>
+              
+          </div>
+      </div>
+      <div class="explore-overlay" id="exploreOverlay">
+        <div class="explore-content">
+          <div class="explore-close" onclick="closeMessage()">&times;</div>
+          <div id="messageImage"></div>
+          <h2 id="messageName"></h2>
+          <p id="messagePosition"></p>
+          <div id="messageSocial"></div>
+          <p id="messageDescription"></p>
+        </div>
+      </div> <style>
+        body {
+         
+          font-family: Arial, sans-serif;
+          background-color: #f5f5f5;
+        }
+    
+        #carts-wrapper-pride {
+          position: relative;
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 20px;
+        }
+    
+       
+    
+        .explore-button {
+          position: absolute;
+          
+          transform: translate(-50%, -50%);
+          text-align: center;
+          cursor: pointer;
+          
+
+          display: inline-block;
+          padding: 5px 10px;
+          background-color: blue;
+          color: #fff;
+          text-decoration: none;
+          border-radius: 20px;
+          font-size: 10px;
+          font-family: sans-serif;
+          margin-top: 350px;
+          margin-left: 30%;
+        }
+    
+        .explore-overlay {
+          position: fixed;
+         
+          width: 100%;
+          height: 100%;
+          background-color: rgba(224, 188, 194, 0.8);
+          z-index: 9999;
+          display: none;
+          justify-content: center;
+          align-items: center;
+        }
+    
+        .explore-content {
+          max-width: 800px;
+          padding: 20px;
+          background-color: #fff;
+          text-align: center;
+          position: relative;
+        }
+    
+        .explore-close {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          width: 30px;
+          height: 30px;
+          background-color: #fc0101;
+          color: #fff;
+          font-size: 20px;
+          text-align: center;
+          line-height: 30px;
+          cursor: pointer;
+        }
+      </style>
+             </div>
+             </div>
+            
+             <script>
+              function openMessage(name, position, message) {
+                const exploreOverlay = document.getElementById('exploreOverlay');
+                const messageImage = document.getElementById('img');
+                const messageName = document.getElementById('messageName');
+                const messagePosition = document.getElementById('messagePosition');
+                const messageSocial = document.getElementById('messageSocial');
+                const messageDescription = document.getElementById('messageDescription');
+            
+                const previousPage = document.getElementById('carts-wrapper-pride');
+                previousPage.style.filter = 'blur()';
+            
+                exploreOverlay.style.display = 'flex';
+                messageImage.innerHTML = `<img src="path/to/${name.toLowerCase()}.jpg" alt="${name}">`;
+                messageName.textContent = name;
+                messagePosition.textContent = position;
+                messageDescription.textContent = message; // Set the specific message for the person
+                messageSocial.innerHTML = `
+                  <img src="img/insta.png" alt="Instagram">
+                  <img src="img/image-21-NYn.png" alt="facebook">
+                  <img src="img/twitter.png" alt="Twitter">
+                  <img src="path/to/linkedin.png" alt="LinkedIn">
+                `;
+            
+                const exploreClose = document.createElement('div');
+                exploreClose.classList.add('explore-close');
+                exploreClose.innerHTML = '&times;';
+                exploreClose.addEventListener('click', closeMessage);
+                document.querySelector('.explore-content').appendChild(exploreClose);
+              }
+            
+              function closeMessage() {
+                const exploreOverlay = document.getElementById('exploreOverlay');
+                const previousPage = document.getElementById('carts-wrapper-pride');
+            
+                exploreOverlay.style.display = 'none';
+                previousPage.style.filter = 'none';
+              }
+            </script>
+            </div>
+
+            <style>
+              /* Styles for the subscribe button */
+              .subscribe button {
+                background-color: gray;
+                width: 200px;
+                color: white;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+              }
+            
+              /* Styles for the company image */
+              .company-image {
+                display: block;
+                margin-top: 20px;
+              }
+            
+              /* Styles for the company tagline */
+              .company-tagline {
+                color: #f3eaea; /* Replace with your desired color */
+                font-weight: bold;
+                margin-top: 10px;
+              }
+            </style>
+                             
+               
+</div><footer id="footer">
+<div class="footer-top">
+<div class="container-footer-footer-footer-footer-footer">
+<div class="row">
+<!-- Additional Options -->
+<div class="col-lg-12">
+  <div class="additional-options">
+    <ul class="horizontal-options">
+     
+  </div>
+</div>
+<!-- End of Additional Options -->
+
+<!-- Horizontal Line -->
+<div class="col-lg-12">
+  <hr>
+</div>
+
+<!-- Other Links -->
+<div class="col-lg-3 col-md-6 footer-links" style="margin-left: 50px;">
+  <h4>Top Section</h4>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="trainings.html">Trainings</a></li>
+    <li><a href="internships.html">Internships</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="jobs.html">Jobs</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+</div>
+<div class="col-lg-3 col-md-6 footer-links" style="margin-left: 45px;">
+  <h4>Quick Links</h4>
+  <ul>
+    <li><a href="#">Blogs</a></li>
+    <li><a href="#">Feedback/Queries</a></li>
+    <li><a href="#">Help</a></li>
+    <li><a href="#">Terms & Conditions</a></li>
+  </ul>
+</div>
+<div class="col-lg-3 col-md-6 footer-links" style="margin-left: 45px;">
+  <h4>Explore</h4>
+  <ul>
+    <li><a href="#">Search</a></li>
+    <li><a href="#">Announcements</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">Notice</a></li>
+  </ul>
+</div>
+<div class="col-lg-3 col-md-6 footer-links" style="margin-left: 45px;">
+  <h4>Social</h4>
+  <!-- Social Media Icons -->
+  <ul class="social-icons">
+    <li><a href="#"><img src="img\fb.png" alt="Facebook" style="height: 20px;width:20px;"></a></li>
+    <li><a href="#"><img src="img\insta.png" alt="Instagram"style="height: 20px;width:20px;"></a></li>
+    <li><a href="#"><img src="img\wp.png" alt="WhatsApp"style="height: 20px;width:20px;"></a></li>
+    <!-- <li><a href="#"><img src="img\linkdnl.png" alt="LinkedIn"style="height: 20px;width:20px;"></a></li> -->
+    <li><a href="#"><img src="img\twitter.png" alt="Twitter"style="height:20px;width:20px;"></a></li>
+    <li><a href="#"><img src="img\emailid.png" alt="Email"style="height: 20px;width:20px;"></a></li>
+  </ul>
+</div>
+<style>.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons li {
+  margin: 0 2px;
+}
+</style>
+<style>
+  .subscribe form {
+    display: flex;
+    align-items: center;
+  }
+
+  .subscribe input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-right: 10px;
+  }
+
+  .subscribe button[type="submit"] {
+    width: 150px;
+    background-color:#ffc800;;
+    color: white;
+    font-style: bold;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+</style>
+
+<div class="subscribe" style="margin-left: 45px;">
+  <h4></h4>
+  <form action="#" method="post">
+    <input type="email" name="email" placeholder="Enter your email" required>
+    <br> <!-- Add line break to move to the next line -->
+    <button type="submit">Subscribe</button>
+  </form>
+  <center>
+    <img src="img\logo1.png" alt="Company" class="company-image">
+  <p class="company-tagline">Tagline of the Company</p>
+  </center>
+</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="container-footer-footer-footer py-4">
+<div class="copyright" style="margin-left: 50px;">
+&copy; Copyright <strong><span>DSES</span></strong>.
+All Rights Reserved
+</div>
+<div class="credits" style="margin-right: 90px;">
+Designed by <a href="#">Chandrika Dhale</a>
+</div>
+</div>
+</footer>
+<!-- footer -->
+<style>
+  /* footer */
+  
+  
+  
+  
+  
+  /* footer */
+  #footer{
+    padding: 0 0 30px 0px;
+    color: white;
+    font-size: 14px;
+    background-color: #21315A;
+    margin-top: 100px;
+  }
+  #footer .footer-top{
+    padding: 60px 0 30px 0;background-color: #21315A;
+    color: white;
+  }
+  #footer .footer-top .footer-contact{
+    margin-bottom: 30px;
+  }
+  #footer .footer-top .footer-contact h3{
+    color: #ffc800;
+  }
+  #footer .footer-top .footer-contact h4{
+    font-size: 22px;
+    margin: 0 5 30px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+  }
+  #footer .footer-top .footer-contact p{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    color: white;
+  }
+  #footer .footer-top h4{
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  #footer .footer-top .footer-links{
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+  #footer .footer-top .footer-links h4{
+    color: #ffc800;
+  }
+  #footer .footer-top .footer-links ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  #footer .footer-top .footer-links ul li{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  #footer .footer-top .footer-links ul li a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    line-height: 1;
+    font-weight: bold;
+    transition: 0.5s ease;
+  }
+  #footer .footer-top .footer-links ul li a:hover{
+    color: #ffc800;
+  }
+  #footer .footer-top .socail-links a{
+    font-size: 18px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #373737;
+    color: white;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    transition: 0.5s ease;
+  }
+  #footer .footer-top .socail-links a:hover{
+    background-color: #ffc800;
+    color: white;
+  }
+  #footer .copyright{
+    text-align: center;
+    float: left;
+  }
+  #footer .credits{
+    float: right;
+    text-align: center;
+    font-size: 13px;
+  }
+  #footer .credits a{
+    color: #ffc800;
+  }
+  /* footer */
+  
+  </style>
+</body>
+</html>

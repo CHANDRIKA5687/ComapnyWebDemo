@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="img\logo.png" alt="Company Logo">
+    </div>
+    <div class="company-info">
+      <h5>Dnyanda Sustainable<br>Engineering Solutions<br>Private Limited, Pune</h5>
+    </div>
+  
+    <nav>
+      <!-- <div class="menu-logo">
+        <img src="img\menubar.png" alt="Menu Logo">
+      </div> -->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="trainings.html">Trainings</a></li>
+        <li class="dropdown" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+          <a href="">Opportunities</a>
+          <ul class="dropdown-menu" style="font-color: white;">
+            <li style="background-color: black;"><a href="internships.html">Internships</a></li>
+            <li style="background-color: black;"><a href="jobs.html">Jobs</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    </nav>
+    <div class="search-login">
+      <input type="text" placeholder="Search">
+      <a href="login.html">
+        <img src="img\personlogo.png" alt="Person Image" class="person-image">
+      </a>   </div>
+      <!-- <input type="text" placeholder="Search"> -->
+    </div>
+  </div>
+ <div>
+        <!-- <img src="img\cart.png" alt="Cart">
+        <img src="img\profilelogo.jpg" alt="Profile"> -->
+</div>
+    
+  </header>
+
+
+
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgba(255, 192, 203, 0.854);
+    }
+    
+    .form-container {
+      display: flex;
+      margin: 20px;
+    }
+    
+    .form-container .contact-form {
+      flex: 1;
+      padding: 20px;
+      background-color: #f5f5f5;
+      border-radius: 5px;
+    }
+    
+    .form-container .contact-form h2 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    
+    .form-container .contact-form input[type="text"],
+    .form-container .contact-form input[type="email"],
+    .form-container .contact-form input[type="tel"],
+    .form-container .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: border-color 0.3s ease;
+    }
+    
+    .form-container .contact-form input[type="text"]:focus,
+    .form-container .contact-form input[type="email"]:focus,
+    .form-container .contact-form input[type="tel"]:focus,
+    .form-container .contact-form textarea:focus {
+      outline: none;
+      border-color: #666;
+    }
+    
+    .form-container .contact-form textarea {
+      height: 100px;
+    }
+    
+    .form-container .contact-form button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .form-container .contact-form button:hover {
+      background-color: #555;
+    }
+    
+    .form-container .contact-info {
+      flex: 1;
+      padding: 20px;
+      background-color: #f5f5f5;
+      border-radius: 5px;
+      margin-left: 20px;
+    }
+    
+    .form-container .contact-info h2 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    
+    .form-container .contact-info .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .form-container .contact-info .contact-item img {
+      width: 20px;
+      margin-right: 10px;
+    }
+    
+    .form-container .contact-info .contact-item p {
+      margin: 0;
+    }
+    
+    .location-container {
+      margin: 20px;
+    }
+    
+    .location-container h2 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    
+    .location-container img {
+      max-width: 100%;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <div class="contact-form">
+      <h2>Send us a message</h2>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <input type="tel" placeholder="Your Mobile No">
+      <textarea
+      placeholder="Your Message"></textarea>
+      <button>Send Message</button>
+    </div>
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <div class="contact-item">
+        <img src="img\phone.png" alt="Phone Logo">
+        <p>Phone : +91-7028975161</p>
+      </div>
+      <div class="contact-item">
+        <img src="img\emailid.png" alt="Email Logo">
+        <p>dses.contact@gmail.com</p>
+      </div>
+      <div class="contact-item">
+        <img src="img\insta.png" alt="Instagram Logo">
+        <p>Instagram: @example</p>
+      </div>
+      <div class="contact-item">
+        <img src="img\wp.png" alt="WhatsApp Logo">
+        <p>WhatsApp: +91-7028975161</p>
+      </div>
+      <div class="contact-item">
+        <img src="img\home.png" alt="WhatsApp Logo">
+        <p>Ravet, PUNE(MS) India - 412101
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="location-container">
+    
+    <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1342&amp;height=434&amp;hl=en&amp;q=Ravet, PUNE(MS) India - 412101&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://capcuttemplate.org/">Capcut Templates</a></div><style>.mapouter{position:relative;text-align:right;width:1342px;height:434px;}.gmap_canvas {overflow:hidden;background:none!important;width:1342px;height:434px;}.gmap_iframe {width:1342px!important;height:434px!important;}</style></div>
+    
+  </div>
+  <style>
+    /* Styles for the subscribe button */
+    .subscribe button {
+      background-color: gray;
+      width: 200px;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+  
+    /* Styles for the company image */
+    .company-image {
+      display: block;
+      margin-top: 20px;
+    }
+  
+    /* Styles for the company tagline */
+    .company-tagline {
+      color: #f3eaea; /* Replace with your desired color */
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+                   
+     
+</div><footer id="footer">
+<div class="footer-top">
+<div class="container-footer-footer-footer-footer-footer">
+<div class="row">
+<!-- Additional Options -->
+<div class="col-lg-12">
+<div class="additional-options">
+<ul class="horizontal-options">
+
+</div>
+</div>
+<!-- End of Additional Options -->
+
+<!-- Horizontal Line -->
+<div class="col-lg-12">
+<hr>
+</div>
+
+<!-- Other Links -->
+<div class="col-lg-3 col-md-6 footer-links" style="margin-left: 50px;">
+<h4>Top Section</h4>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="trainings.html">Trainings</a></li>
+<li><a href="internships.html">Internships</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="jobs.html">Jobs</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="col-lg-3 col-md-6 footer-links" style="margin-left: 45px;">
+<h4>Quick Links</h4>
+<ul>
+<li><a href="#">Blogs</a></li>
+<li><a href="#">Feedback/Queries</a></li>
+<li><a href="#">Help</a></li>
+<li><a href="#">Terms & Conditions</a></li>
+</ul>
+</div>
+<div class="col-lg-3 col-md-6 footer-links" style="margin-left: 45px;">
+<h4>Explore</h4>
+<ul>
+<li><a href="#">Search</a></li>
+<li><a href="#">Announcements</a></li>
+<li><a href="#">News</a></li>
+<li><a href="#">Notice</a></li>
+</ul>
+</div>
+<div class="col-lg-3 col-md-6 footer-links" style="margin-left: 45px;">
+<h4>Social</h4>
+<!-- Social Media Icons -->
+<ul class="social-icons">
+<li><a href="#"><img src="img\fb.png" alt="Facebook" style="height: 20px;width:20px;"></a></li>
+<li><a href="#"><img src="img\insta.png" alt="Instagram"style="height: 20px;width:20px;"></a></li>
+<li><a href="#"><img src="img\wp.png" alt="WhatsApp"style="height: 20px;width:20px;"></a></li>
+<!-- <li><a href="#"><img src="img\linkdnl.png" alt="LinkedIn"style="height: 20px;width:20px;"></a></li> -->
+<li><a href="#"><img src="img\twitter.png" alt="Twitter"style="height:20px;width:20px;"></a></li>
+<li><a href="#"><img src="img\emailid.png" alt="Email"style="height: 20px;width:20px;"></a></li>
+</ul>
+</div>
+<style>.social-icons {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.social-icons li {
+margin: 0 2px;
+}
+</style>
+<style>
+.subscribe form {
+display: flex;
+align-items: center;
+}
+
+.subscribe input[type="email"] {
+width: 100%;
+padding: 10px;
+margin-right: 10px;
+}
+
+.subscribe button[type="submit"] {
+width: 150px;
+background-color:#ffc800;;
+color: white;
+font-style: bold;
+border: none;
+padding: 10px;
+cursor: pointer;
+}
+</style>
+
+<div class="subscribe" style="margin-left: 45px;">
+<h4></h4>
+<form action="#" method="post">
+<input type="email" name="email" placeholder="Enter your email" required>
+<br> <!-- Add line break to move to the next line -->
+<button type="submit">Subscribe</button>
+</form>
+<center>
+<img src="img\logo1.png" alt="Company" class="company-image">
+<p class="company-tagline">Tagline of the Company</p>
+</center>
+</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="container-footer-footer-footer py-4">
+<div class="copyright" style="margin-left: 50px;">
+&copy; Copyright <strong><span>DSES</span></strong>.
+All Rights Reserved
+</div>
+<div class="credits" style="margin-right: 90px;">
+Designed by <a href="#">Chandrika Dhale</a>
+</div>
+</div>
+</footer>
+<!-- footer -->
+<style>
+/* footer */
+
+
+
+
+
+/* footer */
+#footer{
+padding: 0 0 30px 0px;
+color: white;
+font-size: 14px;
+background-color: #21315A;
+margin-top: 100px;
+}
+#footer .footer-top{
+padding: 60px 0 30px 0;background-color: #21315A;
+color: white;
+}
+#footer .footer-top .footer-contact{
+margin-bottom: 30px;
+}
+#footer .footer-top .footer-contact h3{
+color: #ffc800;
+}
+#footer .footer-top .footer-contact h4{
+font-size: 22px;
+margin: 0 5 30px 0;
+padding: 2px 0 2px 0;
+line-height: 1;
+font-weight: 700;
+}
+#footer .footer-top .footer-contact p{
+font-size: 14px;
+line-height: 24px;
+margin-bottom: 0;
+color: white;
+}
+#footer .footer-top h4{
+font-size: 16px;
+font-weight: bold;
+position: relative;
+padding-bottom: 12px;
+}
+#footer .footer-top .footer-links{
+margin-bottom: 30px;
+margin-top: 10px;
+}
+#footer .footer-top .footer-links h4{
+color: #ffc800;
+}
+#footer .footer-top .footer-links ul{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+#footer .footer-top .footer-links ul li{
+padding: 10px 0;
+display: flex;
+align-items: center;
+}
+#footer .footer-top .footer-links ul li a{
+text-decoration: none;
+color: white;
+display: inline-block;
+line-height: 1;
+font-weight: bold;
+transition: 0.5s ease;
+}
+#footer .footer-top .footer-links ul li a:hover{
+color: #ffc800;
+}
+#footer .footer-top .socail-links a{
+font-size: 18px;
+display: inline-block;
+text-decoration: none;
+background-color: #373737;
+color: white;
+line-height: 1;
+padding: 8px 0;
+margin-right: 4px;
+border-radius: 50%;
+text-align: center;
+width: 36px;
+transition: 0.5s ease;
+}
+#footer .footer-top .socail-links a:hover{
+background-color: #ffc800;
+color: white;
+}
+#footer .copyright{
+text-align: center;
+float: left;
+}
+#footer .credits{
+float: right;
+text-align: center;
+font-size: 13px;
+}
+#footer .credits a{
+color: #ffc800;
+}
+/* footer */
+
+</style>
+
+</body>
+</html>
